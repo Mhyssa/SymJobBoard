@@ -29,7 +29,7 @@ class AppFixtures extends Fixture
         }
         $manager->flush();
 
-        for ($i = 0; $i < 25; $i++) {
+        for ($i = 0; $i < 24; $i++) {
             $offre = $this->createOffre($faker->jobTitle(), $faker->paragraph(3), $faker->randomFloat(6, 0, 9999), $this->randomService($manager), $this->randomTags($manager));
             $manager->persist($offre);
             }
